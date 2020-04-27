@@ -10,8 +10,8 @@
 </head>
 <body>
 	<h1>로그인 사이트입니다</h1>
-	<c:forEach var="test" items="${select }">
-		<h1>${test.age}</h1>
+	<c:forEach var="test" items="${member}">
+		<h1>${test}</h1>
 	</c:forEach>
 </body>
 </html>
