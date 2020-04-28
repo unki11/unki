@@ -42,4 +42,22 @@ public class MemberController {
 		return "member/login";
 	}
 	
+	@RequestMapping("/signup")
+	public String signup() {
+		
+		return "member/signup";
+	}
+	
+	@RequestMapping("/findid")
+	public String findid() {
+		
+		return "member/findid";
+	}
+	
+	@RequestMapping("/findpw")
+	public String findpw() {
+		
+		return "member/findpw";
+	}
+	
 }
