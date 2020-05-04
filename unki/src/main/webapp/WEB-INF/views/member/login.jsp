@@ -14,18 +14,21 @@
 		font-size:18px;
 		padding-left: 20px;
 	}
-	.formlogin{
-		
+	.logindiv{
+		width: 450px;
+		margin: auto; 
+		margin-top: 100px; 
+		margin-bottom: 200px;
 	}
-	@media(max-width:800px) {
-        .idpwinput{
+	@media(max-width:700px) {
+        .logindiv{
         	width: 100%;
 		}
       }
 </style>
 <body style="margin: auto;">
 <section>
-		<div align="center" style="width: 30%;margin: auto; margin-top: 100px; margin-bottom: 200px;">
+		<div align="center" class="logindiv">
 		<h2>로그인</h2>
 		<form>
 			<div><input type="text" class="idpwinput" placeholder="아이디"></div><br>	

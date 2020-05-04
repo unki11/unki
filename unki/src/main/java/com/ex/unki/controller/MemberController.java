@@ -41,6 +41,12 @@ public class MemberController {
 		model.addAttribute("member", member);
 		return "member/login";
 	}
+	@RequestMapping("/profile")
+	public String profile(Model model) {
+		MemberDto member = sqlSession.selectOne("member.one",1);
+		model.addAttribute("member", member);
+		return "member/profile";	
+	}
 	
 	@RequestMapping("/signup")
 	public String signup() {
