@@ -36,6 +36,7 @@
 								<header>
 									<a href="member/login" class="icon fa-vcard-o"><span class="label">Icon</span></a>
 									<h2>로그인</h2>
+									<h5>로그인을 할 수 있습니다.</h5>
 								</header>
 							</div>
 						</section>
@@ -52,6 +53,22 @@
 								<header>		
 									<a href="#" class="icon fa-commenting"><span class="label">Icon</span></a>
 									<h2>자유게시판</h2>
+								</header>
+							</div>
+						</section>
+						<section>
+							<div class="content">
+								<header>		
+									<a href="#" class="icon fa-commenting"><span class="label">Icon</span></a>
+									<h2>상점</h2>
+								</header>
+							</div>
+						</section>
+						<section>
+							<div class="content">
+								<header>		
+									<a href="member/profile" class="icon fa-commenting"><span class="label">Icon</span></a>
+									<h2>프로필</h2>
 								</header>
 							</div>
 						</section>

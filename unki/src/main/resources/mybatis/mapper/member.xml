@@ -5,4 +5,8 @@
 	<select id="list" resultType="com.ex.unki.entity.MemberDto">
 		select * from member
 	</select>
+	
+	<select id="one" parameterType="int" resultType="com.ex.unki.entity.MemberDto">
+		select * from member where member_no = #{no}
+	</select>
 </mapper>
