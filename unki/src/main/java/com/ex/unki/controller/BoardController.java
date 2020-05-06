@@ -8,31 +8,31 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/board")
 public class BoardController {
 	
-	@GetMapping("/noticeboard")
+	@GetMapping("/notice")
 	public String noticeboard() {
 		
 		return "board/noticeboard";	
 	}
 	
-	@GetMapping("/freeboard")
+	@GetMapping("/free")
 	public String freeboard() {
 		
 		return "board/freeboard";	
 	}
 	
-	@GetMapping("/detailboard")
+	@GetMapping("/detail")
 	public String detailboard() {
 		
 		return "board/detailboard";	
 	}
 	
-	@GetMapping("/writeboard")
+	@GetMapping("/write")
 	public String writeboard() {
 		
 		return "board/writeboard";	
 	}
 	
-	@GetMapping("/editboard")
+	@GetMapping("/edit")
 	public String editboard() {
 		
 		return "board/editboard";	
