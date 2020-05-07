@@ -11,21 +11,26 @@
 <style type="text/css">
 	.boardtable{
 		box-shadow: 1px 0 0 0 black, 0 1px 0 0 gray, 1px 1px 0 0 gray,1px 0 0 0 gray inset,0 1px 0 0 gray inset;
-		width: 60%;
 		padding: 20px;
 	}
+	.boarddiv{
+		width: 750px;
+		margin: auto; 
+		margin-top: 100px; 
+		margin-bottom: 200px;
+	}
+	@media(max-width:700px) {
+        .boarddiv{
+        	width: 95%;
+		}
+      }
 </style>
 </head>
 <body>
 	<section>	
-	<div align="center" style="margin-top: 100px;">
+	<div align="center" class="boarddiv">
 		<h2>자유게시판</h2>
-	<table style="margin: auto;margin-top: 20px;margin-bottom: 50px;width: 60%;">
-		<thead>
-		<tr>
-			<th style="font-size: 1.5rem;">제목</th>
-		</tr>
-		</thead>
+	<table class="boardtable">
 		<tbody>
 			<c:forEach begin="1" end="10">
 				<tr>
