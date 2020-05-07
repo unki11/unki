@@ -10,21 +10,45 @@
 <jsp:include page="/WEB-INF/views/template/header.jsp"></jsp:include>
 <style type="text/css">
 	.boardtable{
-		box-shadow: 1px 0 0 0 black, 0 1px 0 0 gray, 1px 1px 0 0 gray,1px 0 0 0 gray inset,0 1px 0 0 gray inset;
-		width: 60%;
-		padding: 10px;
+		box-shadow: 1px 1px 1px black;
+		margin: auto;
 	}
+	.boarddiv{
+		width: 750px;
+		margin: auto; 
+		margin-top: 100px; 
+		margin-bottom: 200px;
+	}
+	a { 
+		text-decoration:none 
+	  } 
+	@media(max-width:700px) {
+        .boarddiv{
+        	width: 95%;
+		}
+      }
 </style>
 </head>
 <body>
-	<section>
-		<div align="center" style="margin: auto;margin-top: 100px;margin-bottom: 50px;">
+	<section>	
+		<div align="center" class="boarddiv">
 			<h2>자유게시판</h2>
+		<table class="boardtable">
 				<c:forEach begin="1" end="10">
-					<div align="left" class="boardtable">
-						안녕하세요 제이름은 데이브 인데요.
-					</div>
+					<tr>
+						<td align="left">
+							<a href="detail">
+								안녕하세요 제이름은 데이브 인데요.
+							</a>
+						</td>
+					</tr>
 				</c:forEach>
+		</table>
+		<div align="right">
+			<a href="write">	
+				<button>글쓰기</button>
+			</a>
+		</div>
 			<div>
 				1 2 3 4 5 6 7 8 9 10
 			</div>
