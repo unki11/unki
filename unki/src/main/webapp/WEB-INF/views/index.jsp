@@ -12,12 +12,12 @@
 		<style type="text/css">
 			.container {
  				position: absolute;
-  				margin-top: 200px;
+  				margin-top: 300px;
 			}
 .chevron {
   position: absolute;
-  width: 28px;
-  height: 8px;
+  width: 56px;
+  height: 16px;
   opacity: 0;
   transform: scale3d(0.5, 0.5, 0.5);
   animation: move 3s ease-out infinite;
@@ -95,12 +95,13 @@
 	
 		<jsp:include page="/WEB-INF/views/template/header.jsp"></jsp:include>
 			<!-- Banner -->
-			<section id="banner">
+			<section id="banner" style="height: 60rem;">
 				<div class="inner">
 					<h1>Unki-Kim</h1>
-					<p>동물과 사이버펑크를 좋아하는 21살 청년입니다.</p>
+					<p>loumas asd asdlmwel and sdiwnl asih baefod fojop beadk wrainiwjndoanskloumas asd asdlmwel and sdiwnl asih baefod fojop beadk wrainiwjndoansk
+					loumas asd asdlmwel and sdiwnl asih baefod fojop beadk wrainiwjndoansk</p>
 				</div>
-				<video autoplay loop muted playsinline src="images/banner.mp4"></video>
+				<video autoplay loop muted playsinline src="${pageContext.request.contextPath}/static/images/banner.mp4"></video>
 				
 				<div class="container">
   					<div class="chevron"></div>
@@ -112,10 +113,7 @@
 		<!-- Highlights -->
 			<section class="wrapper">
 				<div class="inner">
-					<header class="special">
-						<h2>어쩌고 저쩌고</h2>
-						<p>테스트 중입니다 로그인페이지 구현 X 공지게시판 구현 X 자유게시판 구현 X</p>
-					</header>
+
 					<div class="highlights">
 						<section>
 							<div class="content">
@@ -145,7 +143,7 @@
 						<section>
 							<div class="content">
 								<header>		
-									<a href="#" class="icon fa-commenting"><span class="label">Icon</span></a>
+									<a href="shop/list" class="icon fa-shopping-bag"><span class="label">Icon</span></a>
 									<h2>상점</h2>
 								</header>
 							</div>
@@ -153,12 +151,18 @@
 						<section>
 							<div class="content">
 								<header>		
-									<a href="member/profile" class="icon fa-commenting"><span class="label">Icon</span></a>
+									<a href="member/profile" class="icon fa-vcard-o"><span class="label">Icon</span></a>
 									<h2>프로필</h2>
 								</header>
 							</div>
 						</section>
 					</div>
+				</div>
+			</section>
+			<section id="cta" class="wrapper">
+				<div class="inner">
+					<h2>Curabitur ullamcorper ultricies</h2>
+					<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
 				</div>
 			</section>
 <jsp:include page="/WEB-INF/views/template/footer.jsp"></jsp:include>

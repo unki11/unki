@@ -25,8 +25,10 @@
 		<!-- Nav -->
 			<nav id="menu">
 				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="elements.html">Elements</a></li>
-					<li><a href="generic.html">Generic</a></li>
+					<li><a href="${pageContext.request.contextPath}">홈</a></li>
+					<li><a href="${pageContext.request.contextPath}/member/login">로그인</a></li>
+					<li><a href="${pageContext.request.contextPath}/board/notice">공지</a></li>
+					<li><a href="${pageContext.request.contextPath}/board/free">자유</a></li>
+					<li><a href="${pageContext.request.contextPath}/shop/list">상점</a></li>
 				</ul>
 			</nav>

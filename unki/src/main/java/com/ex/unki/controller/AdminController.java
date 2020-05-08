@@ -7,19 +7,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/admin")
 public class AdminController {
 	
-	@RequestMapping("/memberlist")
+	@RequestMapping("/list")
 	public String memberlist() {
 		
 		return "admin/memberlist";
 	}
 	
-	@RequestMapping("/memberdetail")
+	@RequestMapping("/detail")
 	public String memberdetail() {
 		
 		return "admin/memberdetail";
 	}
 	
-	@RequestMapping("/shopregist")
+	@RequestMapping("/regist")
 	public String shopregist() {
 		
 		return "admin/shopregist";

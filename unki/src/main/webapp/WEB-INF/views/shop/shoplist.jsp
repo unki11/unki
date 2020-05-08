@@ -94,18 +94,19 @@
 				<jsp:include page="/WEB-INF/views/template/header.jsp"></jsp:include>
 	</head>
 	<body class="is-preload">
+			<section>
+				<div style="width: 80%;margin: auto;">
 					<div class="highlights">
 						<c:forEach begin="1" end="10">
-							<section>
-								<div class="content">
+							<section><div class="content">
 									<header>
-										<img src="/resources/images/pic01.jpg">
-										<h2>로그인</h2>
-										<h5>로그인을 할 수 있습니다.</h5>
+										<img src="${pageContext.request.contextPath}/static/images/pic03.jpg" alt="바보">
+										<h2>산책하기</h2>
+										<div>포인트 : 500</div> <button>구매하기</button>
 									</header>
 								</div>
 							</section>
-						</c:forEach>
+						</c:forEach>	
 					</div>
 				</div>
 			</section>
